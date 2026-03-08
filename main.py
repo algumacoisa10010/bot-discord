@@ -456,5 +456,10 @@ async def testlog(ctx, tipo: str = "entrada"):
 
 # ================= START BOT ================= #
 
-bot.run(os.getenv("TOKEN"))
+token = os.getenv("TOKEN")
+
+print("Token carregado:", bool(token))
+
+bot.run(token)
+
 

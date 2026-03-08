@@ -9,8 +9,6 @@ from datetime import datetime, timedelta
 
 # ================= CONFIG ================= #
 
-bot.run(os.getenv("TOKEN"))
-
 GIF_BANNER = "https://media.discordapp.net/attachments/1479835854435520607/1480074101304463473/standard_7.gif?ex=69af02ac&is=69adb12c&hm=b45cd49a90821231861193e6bc4f161900834aadd5a651cc7c549750e136a83e&="
 
 intents = discord.Intents.default()
@@ -454,3 +452,9 @@ async def testlog(ctx, tipo: str = "entrada"):
     await canal.send(embed=embed)
 
     await ctx.send(f"✅ Mensagem de teste enviada em {canal.mention}")
+
+
+# ================= START BOT ================= #
+
+bot.run(os.getenv("TOKEN"))
+
